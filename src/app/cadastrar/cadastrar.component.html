@@ -11,15 +11,21 @@
 
                 <h1 class="text-center">Cadastro</h1>
 
-                <div class="form-group">
-                    <label for="Nome">Nome</label>
+                <div class="form-group mt-5">
+                    <label for="nome">Nome</label>
                     <input class="form-control" type="text" name="nome" id="nome"
                     placeholder="Digite seu nome">
                 </div>
 
                 <div class="form-group">
+                    <label for="dataNascimento">Data de Nascimento</label>
+                    <input class="form-control" type="date" name="dataNascimento" id="dataNascimento"
+                    placeholder="Digite sua data de nascimento">
+                </div>
+
+                <div class="form-group">
                     <label for="usuario">Usuário</label>
-                    <input class="form-control" type="text" name="usuario" id="usuario"
+                    <input class="form-control" type="email" name="usuario" id="usuario"
                     placeholder="Digite seu usuário">
                 </div>
 
@@ -51,8 +57,8 @@
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-danger mr-4">Cancelar</button>
-                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                    <button type="submit" class="btn btn-outline-danger mr-4 px-5" routerLink="/entrar">Cancelar</button>
+                    <button type="submit" class="btn btn-outline-info px-5">Cadastrar</button>
                 </div>
             </div>
         </div>
