@@ -22,6 +22,7 @@ export class TemaService {
   getByIdTema(id: number): Observable<Tema>{
     return this.http.get<Tema>(`https://karoolblog.herokuapp.com/tema/${id}`, this.token)
   }
+  //crase-> templates literals (passar uma rota com string e variavel ao mesmo tempo)
 
   postTema(temaCadastro: Tema): Observable<Tema>{
     return this.http.post<Tema>('https://karoolblog.herokuapp.com/tema', temaCadastro, this.token)
