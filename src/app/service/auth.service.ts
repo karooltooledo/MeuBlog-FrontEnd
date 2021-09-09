@@ -25,6 +25,10 @@ export class AuthService {
     return this.http.get<Usuario>(`https://karoolblog.herokuapp.com/usuarios/${id}`)
   }
 
+  putUsuario(usuario: Usuario): Observable<Usuario>{
+    return this.http.put<Usuario>('https://karoolblog.herokuapp.com/usuarios/alterar', usuario)
+  }
+
   logado(){
     let ok: boolean = false
 
